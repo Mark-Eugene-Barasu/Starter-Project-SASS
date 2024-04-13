@@ -1,22 +1,63 @@
 /* Responsive */
 
 @include Tablet_L {
-    .right h1{
-        font-size: 9rem;
-        @include Flex(column);
+    .right {
+        h1{
+            font-size: 9rem;
+            @include Flex(column);
+        }
     }
+
+    nav {
+        ul {
+            justify-content: space-around;
+        }
+    }
+
     footer {
+        justify-content: space-around;
+
         a {
             padding: 0 0.5rem;
+        }
+    }
+    
+    @keyframes right {
+        0%{
+            background-position: -1000px;
+            left: 100%;
+            opacity: 0;
+        }
+        100% {
+            background-position: 0px;
+            left: 20%;
+            opacity: 1;
         }
     }
 }
 
 @include Tablet {
-    .right h1{
-        font-size: 7rem;
-        @include Flex(column);
+    .right {
+        h1{
+            font-size: 7rem;
+            @include Flex(column);
+        }
     }
+
+    nav {
+        ul {
+            justify-content: space-around;
+        }
+    }
+
+    footer {
+        justify-content: space-around;
+
+        a {
+            padding: 0rem 0.5rem;
+        }
+    }
+
     @keyframes right {
         0%{
             background-position: -1000px;
@@ -49,7 +90,7 @@
     }
 
     .right h1 {
-        font-size: 3em;
+        font-size: 4.5rem;
         top: 50%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -99,6 +140,5 @@
             top: 20%;
             left: 100%;
         }
-        
     }
 }

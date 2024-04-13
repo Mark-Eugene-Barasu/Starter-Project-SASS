@@ -43,7 +43,7 @@
         }
     }
     animation: right 2s ease forwards;
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 // Background Mixins
@@ -51,8 +51,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-clip: text;
     background-attachment: fixed;
+    background-clip: text;
     -webkit-background-clip: text;
 }
 

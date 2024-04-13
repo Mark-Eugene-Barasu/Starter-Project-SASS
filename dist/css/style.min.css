@@ -114,12 +114,12 @@ nav ul li a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-clip: text;
   background-attachment: fixed;
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation: right 2s ease forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 @keyframes right {
   0% {
@@ -146,7 +146,7 @@ footer {
 }
 footer .copy {
   color: #fafafa;
-  padding-left: 2rem;
+  padding: 2rem;
   font-size: 1.5rem;
 }
 footer .social {
@@ -182,8 +182,26 @@ footer .social a:last-child:hover {
     flex-direction: column;
     align-items: center;
   }
+  nav ul {
+    justify-content: space-around;
+  }
+  footer {
+    justify-content: space-around;
+  }
   footer a {
     padding: 0 0.5rem;
+  }
+  @keyframes right {
+    0% {
+      background-position: -1000px;
+      left: 100%;
+      opacity: 0;
+    }
+    100% {
+      background-position: 0px;
+      left: 20%;
+      opacity: 1;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -192,6 +210,15 @@ footer .social a:last-child:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  footer {
+    justify-content: space-around;
+  }
+  footer a {
+    padding: 0rem 0.5rem;
   }
   @keyframes right {
     0% {
@@ -219,7 +246,7 @@ footer .social a:last-child:hover {
     width: 100%;
   }
   .right h1 {
-    font-size: 3em;
+    font-size: 4.5rem;
     top: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
